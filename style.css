@@ -274,13 +274,16 @@
 }
 #wp-products h3 {
     font-size: 30px;
+    margin: 0px 20px 0px 20px;
 }
 #wp-products h4 {
     font-size: 25px;
+    margin: 0px 20px 0px 20px;
     margin-top: 5px;
 }
 #wp-products p {
     font-size: 20px;
+    margin: 0px 20px 0px 20px;
     margin-bottom: 10px;
 }
 #wp-products .ingredient {
@@ -373,7 +376,7 @@
 
 #footer {
     width: 100%;
-    background:rgb(0,0,0,0.79);
+    background:red;
     height: 322px;
     margin-top: 69px;
     padding:0px 63px;
@@ -386,7 +389,35 @@
     width: 250px;
     color:#fff;
 }
+#footer .box .logo img{
+   padding-left: 28%;
+}
+#footer .box p {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+   }
+#footer .box .address{
+    display: flex;
+    float: left;
+}
 
+#footer .box .address img {
+    width: 15px;
+    height: 15px;
+    background-color: #f42424;
+    margin-top: 20px;
+   }
+#footer .box .address p{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(192,192,192);
+    margin-top: 20px;
+    padding-left: 10px;
+
+}
 #footer .box .quick-menu {
     margin-top:40px;
 
@@ -401,26 +432,18 @@
     color:#fff;
     text-decoration: none;
 }
-
-
-
-#footer .box form input {
-    width: 294px;
-    height: 42px;
-    background:transparent;
-    padding-left:20px;
-    color:#fff;
-    margin-top:30px;
-}
-
-#footer .box form button {
-    background:#362f2f;
-    box-shadow: 5px 5px 4px rgba(0,0,0.25);
-    width: 163px;
-    height: 38px;
-    margin-top:29px;
-    color:#fff;
-}
+#footer .float-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+  }
+#footer .chat-zalo, .chat-facebook, .call-hotline {
+    display: block;
+    margin-bottom: 6px;
+    line-height: 0;
+    display: inline-block;
+  }
 
 @media screen and (max-width: 1170px) {
 
@@ -450,17 +473,75 @@
     margin-top: 10px;
     width: 100%;
    }
-   #wp-products .ingredient .img1 p {
+#wp-products .ingredient .img1 p {
     display: block;
     text-align: center;
     font-style: italic;
     font-size: 15px;
-   } #wp-products .ingredient .img p {
+}
+#wp-products .ingredient .img p {
     display: block;
     text-align: center;
     font-style: italic;
     font-size: 15px;
    }
+#footer {
+    width: 100%;
+    background:red;
+    height: 222px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
 
-    
+#footer .box {
+    width: 250px;
+    color:#fff;
+    margin: 20px;
+}
+#footer .box .logo img{
+    align-items: center;
+}
+#footer .box p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+   }
+#footer .box .img img {
+    width: 30px;
+    height: 30px;
+   }
+
+#footer .box .quick-menu {
+    margin-top:10px;
+
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+#footer .box .address img {
+    width: 15px;
+    height: 15px;
+    background-color: #f42424;
+    margin-top: 10px;
+   }
+#footer .box .address p{
+    font-size: 5px;
+    font-weight: bold;
+    color: rgb(192,192,192);
+    margin-top: 14px;
+    padding-left: 5px;
+    padding-right: 10px;
+
+}
 }
